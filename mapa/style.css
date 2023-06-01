@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(255, 251, 0);
+    font-family: calibri;
+    font-size: 25px;
+    margin: 0;
+}
+
+.fondo img{
+     height: 1500px;
+     background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: rgb(255, 153, 0);
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 140px;
+    margin-right: 0px;
+}
+
+.nombre-app:hover{
+    color: rgb(255, 238, 0);
+}
+
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: rgb(255, 238, 0);
+}
+
+
+
+
+
+
+
+
+
+.contenedor{
+    position: relative;
+    top: 10px;
+
+    text-align: center;
+
+    background-color: blueviolet;
+    width: 1500px;
+    height: 790px;
+}
+
+.mapa img{
+    height: 797px;
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 100px;
+    
+}
+
+.ubicacion-1 img{
+    height: 70px;
+    position: absolute;
+    left: 400px;
+    top: 385px;
+    z-index: 200px; 
+}
+
+.ubicacion-1 img:hover{
+    height: 71px;
+}
+
+.ubicacion-2 img{
+    height: 70px;
+    position: absolute;
+    left: 445px;
+    top: 285px;
+    z-index: 200px; 
+}
+
+.ubicacion-2 img:hover{
+    height: 71px;
+}

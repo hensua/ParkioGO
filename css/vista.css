@@ -1,0 +1,78 @@
+/* Estilos para el encabezado */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .header p {
+    margin: 0;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .header form {
+    margin: 0;
+  }
+  
+  /* Estilos para el menú desplegable */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown button {
+    background-color: #00aeff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 120px;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ccc;
+    color: #fff;
+  }
+  
+  /* Estilos para el ícono de la flecha hacia abajo */
+  .dropdown button::after {
+    content: "\25BE";
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  

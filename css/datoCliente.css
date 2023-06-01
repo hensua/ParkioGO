@@ -1,0 +1,68 @@
+
+/* Paleta de colores */
+:root {
+  --color-primary: #007bff;
+  --color-primary-hover: #0069d9;
+  --color-background: #f1f8ff;
+  --color-text: #333;
+  --color-text-light: #fff;
+}
+
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--color-background);
+}
+
+.container {
+  padding: 20px;
+  background-color: var(--color-text-light);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  animation: fade-in 0.3s ease-in-out;
+}
+
+/* Estilos para el formulario */
+.container form {
+  display: grid;
+  gap: 10px;
+}
+
+.container form label {
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+.container form input[type="text"],
+.container form input[type="email"] {
+  padding: 5px;
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
+  color: var(--color-text);
+}
+
+.container form input[type="text"]:focus,
+.container form input[type="email"]:focus {
+  outline: none;
+  box-shadow: 0 0 3px var(--color-primary);
+}
+
+.container form button {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.container form button:hover {
+  background-color: var(--color-primary-hover);
+}
+
